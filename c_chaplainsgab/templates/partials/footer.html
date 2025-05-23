@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <img src="{% static 'images/conacceGabon.jpeg' %}" style="border-radius: 10px;" class="logo img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Liens rapides</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="{% url 'home' %}" class="footer-menu-link">Acceuil</a></li>
+                        
+                        <li class="footer-menu-item"><a href="{% url 'a_propos' %}" class="footer-menu-link">Notre histoire</a></li>
+
+                        <li class="footer-menu-item"><a href="{% url 'about' %}" class="footer-menu-link">Nos activités</a></li>
+
+                        <li class="footer-menu-item"><a href="{% url 'be_volunteer' %}" class="footer-menu-link">Devenir volontaire</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Informations & Contact</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: +241077849707" class="site-footer-link">
+                            (+241) 077849707
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:cchaplains.ga@gmail.com" class="site-footer-link">
+                            cchaplains.ga@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Midoumbe 1 OPT, Libreville, Gabon
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright ©  <a href="#">Conacce Chaplains</a> Gabon.
+                            Design: <a href="#" target="_blank">Comite Numérique & TIC</a><br>Distribution:
+                            <a href="#">Conacce Chaplains Gabon</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/profile.php?id=61573912755554" class="social-icon-link bi-facebook"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

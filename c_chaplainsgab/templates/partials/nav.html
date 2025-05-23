@@ -1,0 +1,82 @@
+{% load static %}
+<style>
+    /* Ajout d'un espacement entre le logo et le texte */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espace entre l'image et le texte */
+        margin-right: 50px; /* Ajustez si nécessaire */
+    }
+
+    .navbar-brand img {
+    border-radius: 10px; /* Rend le logo totalement rond */
+    }
+
+    .navbar-brand span {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .navbar-brand small {
+        font-size: 14px;
+        font-weight: normal;
+        color: #555;
+    }
+
+    /* Assurez-vous que les éléments du navbar sont bien espacés */
+    .navbar-nav {
+        margin-left: auto;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+    <div class="container">
+        <!-- Logo et texte -->
+        <a class="navbar-brand" href="{% url 'home' %}" aria-label="Page d'accueil">
+            <div class="logo-container">
+                <img src="{% static 'images/conacceGabon.jpeg' %}" class="logo img-fluid" alt="Logo de CONACCE CHAPLAINS GABON">
+            </div>
+            <div class="brand-text">
+                <span>CONACCE CHAPLAINS GABON</span>
+                <small>Agence humanitaire</small>
+            </div>
+        </a>
+
+        <!-- Bouton pour mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}" aria-label="Page d'accueil">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'a_propos' %}" aria-label="À propos de notre organisation">A propos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}" aria-label="Page pour devenir volontaire">Activités</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'be_volunteer' %}" aria-label="Page pour devenir volontaire">Etre volontaire</a>
+                </li>                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}" aria-label="Page de contact">Contact</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link custom-btn custom-border-btn btn" href="{% url 'donate' %}" aria-label="Faire un don">Don</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

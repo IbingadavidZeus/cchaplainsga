@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% include 'partials/head.html' %}
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+    
+        {% include 'partials/nav.html' %}
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+
+    {% include 'partials/footer.html' %}
+<!-- JAVASCRIPT FILES -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/click-scroll.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
+<!-- Compare this snippet from C_ChaplainsGabon/templates/partials/header.html: -->
+<!-- <header class="site-header sticky-top py-1">
+ -->

@@ -1,0 +1,31 @@
+{% load static %}
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-10 col-12 text-center mx-auto">
+                <h2 class="mb-5">Bienvenue à la Conacce Chaplains du Gabon</h2>
+            </div>
+
+            <div class="col-6">
+                <div class="featured-block d-flex justify-content-center align-items-center">
+                    <a href="{% url 'home' %}" class="d-block">
+                        <img src="{% static 'images/icons/heart.png' %}" class="featured-block-image img-fluid" alt="Caring Earth Icon">
+                        <p class="featured-block-text"><strong>Humanitaire</strong> plus qu'un mot</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="featured-block d-flex justify-content-center align-items-center">
+                    <a href="{% url 'donate' %}" class="d-block">
+                        <img src="{% static 'images/icons/receive.png' %}" class="featured-block-image img-fluid" alt="Donation Icon">
+                        <p class="featured-block-text">Faire <strong>un don</strong></p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
