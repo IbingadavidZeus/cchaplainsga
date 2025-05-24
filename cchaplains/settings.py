@@ -114,14 +114,14 @@ USE_TZ = True
 
 # Fichiers statiques (CSS, JS, etc.)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATICFILES_DIRS = [BASE_DIR / 'static']  # Répertoire de développement
+STATIC_ROOT = BASE_DIR / 'staticfiles'    # Répertoire de production
 
 # Fichiers médias (uploads utilisateurs)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+# https://docs.djangoproject.com/en/4.2/howto/static-files/deployment/
+# Collecte des fichiers statiques pour la production
 
 
 # Default primary key field type
