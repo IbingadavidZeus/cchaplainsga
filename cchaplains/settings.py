@@ -7,7 +7,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True if os.getenv('DEBUG') == 'True' else False
 # Hosts autorisés
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://conaccechaplainsgab.onrender.com']
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
